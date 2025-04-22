@@ -1,0 +1,14 @@
+services:
+  postgrest-jwt:
+    image: postgrest-jwt:1.0
+    ports:
+      - "${HOST_PORT}:5000"
+    environment:
+      - PGRST_JWT_SECRET=${PGRST_JWT_SECRET}
+      - PGRST_JWT_EXPIRE_TIME=${PGRST_JWT_EXPIRE_TIME}
+      - PGRST_JWT_ROLE=${PGRST_JWT_ROLE}
+      - PGRST_JWT_AUD=${PGRST_JWT_AUD}
+      - TZ=${TIME_ZONE}
+    env_file:
+      - .env
+
