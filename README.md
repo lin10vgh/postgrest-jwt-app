@@ -1,6 +1,6 @@
 # Clone
 
-`git clone https://github.com/lin10vgh/postgrest-jwt`
+`git clone https://github.com/lin10vgh/postgrest-jwt-app`
 
 # Build Image
 `docker build -t postgrest-jwt:1.0 .`
